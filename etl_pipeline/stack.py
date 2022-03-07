@@ -73,7 +73,7 @@ class EtlPipelineStack(Stack):
             self,
             "etl-pipeline-rule",
             rule_name="etl-pipeline-rule",
-            schedule=_events.Schedule.expression("cron(10 18 ? * MON *)"),
+            schedule=_events.Schedule.expression("cron(00 09 ? * MON *)"),
         )
         queue = _sqs.Queue(self, "etl-pipeline-dlq")
         rule.add_target(
