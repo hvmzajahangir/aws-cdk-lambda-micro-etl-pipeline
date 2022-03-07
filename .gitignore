@@ -1,0 +1,5 @@
+# misc
+cdk.out/
+.venv/
+.vscode/
+__pycache__/
